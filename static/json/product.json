@@ -1,0 +1,35 @@
+[
+	{
+		"allName":"三农0607-01",
+		"allMoney":"1000元",
+		"allPer":"6",
+		"allAdd":"1.0",
+		"allTime":"3",
+		"allType":"三农",
+		"allBar":"50%",
+		"status":0,
+		"addBlean":true
+	},
+	{
+		"allName":"三农0607-02",
+		"allMoney":"9800元",
+		"allPer":"12",
+		"allAdd":"1.0",
+		"allTime":"6",
+		"allType":"债权保理",
+		"allBar":"20%",
+		"status":1,
+		"addBlean":true
+	},
+	{
+		"allName":"三农0607-02",
+		"allMoney":"9800元",
+		"allPer":"12",
+		"allAdd":"0.0",
+		"allTime":"6",
+		"allType":"债权保理",
+		"allBar":"30%",
+		"status":2,
+		"addBlean":false
+	}
+]

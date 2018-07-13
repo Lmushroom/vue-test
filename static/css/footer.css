@@ -1,0 +1,59 @@
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.1rem;
+	background: #fff;
+	border-top: 1px #e5e5e5 solid;
+	z-index: 11;
+}
+/*footer ul li{
+	float: left;;
+	width: 25%;
+}*/
+footer ul li a{
+	float: left;;
+	width: 25%;
+	font-size: .250rem;
+    color: #666666;
+    text-align: center;
+    line-height: 1.7rem;
+    font-family: ﻿MicrosoftYaHei;
+    color: #a6a2a3;
+}
+footer ul li a.index{
+	background: url(/static/img/index/zhuye.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.chyx{
+	background: url(/static/img/index/touzi.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.wdcp{
+	background: url(/static/img/index/anquan.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.own{
+	background: url(/static/img/index/ren.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.active{
+	color: #d2a36b;
+}
+footer ul li a.active.index{
+	background: url(/static/img/index/zhuyejing2.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.active.chyx{
+	background: url(/static/img/index/touzijin.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.active.wdcp{
+	background: url(/static/img/index/anquanjing.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
+footer ul li a.active.own{
+	background: url(/static/img/index/renjing.png) no-repeat center 0.1rem;
+	background-size: 0.52rem;
+}
