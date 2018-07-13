@@ -37,7 +37,7 @@ export default new Router({
     	component:Own
     },
     {
-      path: '/active/Holiday',
+      path: '/Holiday',
       name:'holiday',
       component:Holiday
     }
