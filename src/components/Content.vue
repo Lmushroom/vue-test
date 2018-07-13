@@ -13,9 +13,11 @@
         <a :href="notice.url" class="notice_msg">{{notice.message}}</a>
         <a :href="notice.url" class="notice_href">详情</a>
       </div>
-      <div class="item">
-        <router-link v-for="aPage in aPages" :to="aPage.url" :class="aPage.class"><span>{{aPage.name}}</span></router-link>
-      </div>
+      <ul class="item">
+        <li v-for="aPage in aPages">
+          <router-link :to="aPage.url" :class="aPage.class"><span>{{aPage.name}}</span></router-link>
+        </li>        
+      </ul>
       <div class="new_mark">
         <p class="new_name">{{newItem.name}}</p>
         <div class="new_info">
@@ -73,13 +75,15 @@
 
 <script type="text/javascript">
   // import Vue from 'vue'
-  import Footer from './Footer'
+  // import '../../static/js/swiper.min.js';
+  import Footer from './Footer';
+
   export default{
       name:'Content',
       data(){
         return {
           aImgs:[         
-            {'url':'../../static/img/banner/chnewtask.jpg','href':'../../static/img/banner/chnewtask.jpg'},
+            {'url':'../../static/img/banner/chnewtask.jpg','href':'active/Holiday'},
             {'url':'../../static/img/banner/gyl.jpg','href':'../../static/img/banner/gyl.jpg'},
             {'url':'../../static/img/banner/summer.jpg','href':'../../static/img/banner/summer.jpg'},
             {'url':'../../static/img/banner/weixin.jpg','href':'../../static/img/banner/weixin.jpg'},
