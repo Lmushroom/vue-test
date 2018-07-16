@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import Chyx from '@/components/Chyx'
 import Wdcp from '@/components/Wdcp'
 import Own from '@/components/Own'
-import Holiday from '@/components/active/Holiday'
+import Holiday from '@/components/Holiday'
 
 Vue.use(Router)
 Vue.use(Mint)

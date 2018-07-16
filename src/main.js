@@ -9,7 +9,7 @@ import '../static/css/style.css'
 import '../static/css/swiper.css'
 import '../static/js/zepto.min.js'
 import '../static/js/rem.js'
-import '../static/js/swiper.js'
+// import '../static/js/swiper.min.js'
 // import {Button} from 'element-ui'
 
 // Vue.use(Button)

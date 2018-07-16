@@ -4,7 +4,7 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="aImg in aImgs">
-            <a :href="aImg.href"><img :src="aImg.url"></a>
+            <router-link :to="aImg.href"><img :src="aImg.url"></router-link>
           </div>      
         </div>
         <div class="swiper-pagination"></div>
@@ -83,7 +83,7 @@
       data(){
         return {
           aImgs:[         
-            {'url':'../../static/img/banner/chnewtask.jpg','href':'active/Holiday'},
+            {'url':'../../static/img/banner/chnewtask.jpg','href':'Holiday'},
             {'url':'../../static/img/banner/gyl.jpg','href':'../../static/img/banner/gyl.jpg'},
             {'url':'../../static/img/banner/summer.jpg','href':'../../static/img/banner/summer.jpg'},
             {'url':'../../static/img/banner/weixin.jpg','href':'../../static/img/banner/weixin.jpg'},
