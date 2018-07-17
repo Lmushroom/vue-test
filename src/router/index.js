@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import Chyx from '@/components/Chyx'
 import Wdcp from '@/components/Wdcp'
 import Own from '@/components/Own'
-import Holiday from '@/components/Holiday'
+import Holiday from '@/components/active/Holiday'
 
 Vue.use(Router)
 Vue.use(Mint)
@@ -37,7 +37,7 @@ export default new Router({
     	component:Own
     },
     {
-      path: '/Holiday',
+      path: '/active/Holiday',
       name:'holiday',
       component:Holiday
     }

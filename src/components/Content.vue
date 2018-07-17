@@ -75,7 +75,7 @@
 
 <script type="text/javascript">
   // import Vue from 'vue'
-  // import '../../static/js/swiper.min.js';
+  import Swiper from '../../static/js/swiper.min.js';
   import Footer from './Footer';
 
   export default{
@@ -83,7 +83,7 @@
       data(){
         return {
           aImgs:[         
-            {'url':'../../static/img/banner/chnewtask.jpg','href':'Holiday'},
+            {'url':'../../static/img/banner/chnewtask.jpg','href':'/active/Holiday'},
             {'url':'../../static/img/banner/gyl.jpg','href':'../../static/img/banner/gyl.jpg'},
             {'url':'../../static/img/banner/summer.jpg','href':'../../static/img/banner/summer.jpg'},
             {'url':'../../static/img/banner/weixin.jpg','href':'../../static/img/banner/weixin.jpg'},

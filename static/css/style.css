@@ -42,7 +42,7 @@ a,a:active,a:visited{
 	width: auto;
 	font-size: .24rem;
     color: #9e9e9e;
-    background: url(../img/index/laba.png) no-repeat left 0.18rem;
+    background: url(/static/img/index/laba.png) no-repeat left 0.18rem;
     background-size: 0.3rem 0.28rem;
 }
 .jf_wrp .notice a.notice_href{
@@ -77,35 +77,35 @@ a,a:active,a:visited{
     position: relative;
 }
 .jf_wrp .item a.myfl{
-	background: url(../img/index/new-indexico4.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico4.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.vip{
-	background: url(../img/index/new-indexico5.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico5.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.safebz{
-	background: url(../img/index/new-indexico1.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico1.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.usr{
-	background: url(../img/index/new-indexico.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.about{
-	background: url(../img/index/new-indexico3.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico3.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.online{
-	background: url(../img/index/new-indexico6.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico6.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.download{
-	background: url(../img/index/new-indexico2.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico2.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .item a.help{
-	background: url(../img/index/new-indexico7.png) center center no-repeat;
+	background: url(/static/img/index/new-indexico7.png) center center no-repeat;
     background-size: auto 0.6rem;
 }
 .jf_wrp .new_mark{
