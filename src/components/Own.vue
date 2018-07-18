@@ -45,20 +45,6 @@
 				<router-link class="logout_link" to="/">退出</router-link>
 			</div>
 		</div>
-		<!-- <div class="usrTip">
-			<router-link class="ch_usr_bg" to="/">
-				<div class="award_box">
-					<span class="redpacket">红包：0个</span>
-					<span class="ch_jxq">加息券：0张</span>
-				</div>
-			</router-link>
-			<router-link class="wd_usr_bg" to="/">
-				<div class="award_box">
-					<span class="redpacket">红包：0个</span>
-					<span class="ch_jxq">加息券：0张</span>
-				</div>
-			</router-link>
-		</div> -->
 		<el-dialog 
 			title="请选择查看账户" 
 			:visible.sync="dialogUserVisible"
@@ -66,7 +52,6 @@
 			custom-class="selUsrTip"
 			@open="usrFun"
 			:data="award">
-			<!-- <div> -->
 				<router-link class="ch_usr_bg" to="/">
 					<div class="award_box">
 						<span class="redpacket">红包：{{award[0].chred}}个</span>
@@ -79,7 +64,6 @@
 						<span class="ch_jxq">加息券：{{award[1].wdjxq}}张</span>
 					</div>
 				</router-link>
-			<!-- </div> -->
 		</el-dialog>
 		<jf-footer></jf-footer>
 	</div>	
@@ -98,8 +82,8 @@
 			return {
 				money:{all:'1200.00',sum:'1000.00',odd:'200.00'},
 				award:[
-					{"chjxq":1,"chred":1},
-					{"wdjxq":1,"wdred":1}
+					{"chjxq":0,"chred":0},
+					{"wdjxq":0,"wdred":0}
 				],
 				dialogUserVisible:false
 			}

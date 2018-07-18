@@ -4,7 +4,7 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="aImg in aImgs">
-            <a :href="aImg.href"><img :src="aImg.url"></a>
+            <router-link :to="aImg.href"><img :src="aImg.url"></router-link>
           </div>      
         </div>
         <div class="swiper-pagination"></div>
@@ -13,16 +13,11 @@
         <a :href="notice.url" class="notice_msg">{{notice.message}}</a>
         <a :href="notice.url" class="notice_href">详情</a>
       </div>
-      <div class="item">
-        <a class="myfl" href="javascript"><span>我的福利</span></a>
-        <a class="vip" href="javascript"><span>VIP专区</span></a>
-        <a class="safebz" href="javascript"><span>安全保障</span></a>
-        <a class="usr" href="javascript"><span>账户中心</span></a>
-        <a class="about" href="javascript"><span>关于我们</span></a>
-        <a class="online" href="javascript"><span>在线客服</span></a>
-        <a class="download" href="javascript"><span>下载APP</span></a>
-        <a class="help" href="javascript"><span>帮助中心</span></a>
-      </div>
+      <ul class="item">
+        <li v-for="aPage in aPages">
+          <router-link :to="aPage.url" :class="aPage.class"><span>{{aPage.name}}</span></router-link>
+        </li>        
+      </ul>
       <div class="new_mark">
         <p class="new_name">{{newItem.name}}</p>
         <div class="new_info">
@@ -80,17 +75,29 @@
 
 <script type="text/javascript">
   // import Vue from 'vue'
-  import Footer from './Footer'
+  import Swiper from '../../static/js/swiper.min.js';
+  import Footer from './Footer';
+
   export default{
       name:'Content',
       data(){
         return {
           aImgs:[         
-            {'url':'../../static/img/banner/chnewtask.jpg','href':'../../static/img/banner/chnewtask.jpg'},
+            {'url':'../../static/img/banner/chnewtask.jpg','href':'/active/Holiday'},
             {'url':'../../static/img/banner/gyl.jpg','href':'../../static/img/banner/gyl.jpg'},
             {'url':'../../static/img/banner/summer.jpg','href':'../../static/img/banner/summer.jpg'},
             {'url':'../../static/img/banner/weixin.jpg','href':'../../static/img/banner/weixin.jpg'},
             {'url':'../../static/img/banner/yi.jpg','href':'../../static/img/banner/yi.jpg'}
+          ],
+          aPages:[
+            {'class':'myfl','url':'myfl','name':'我的福利'},
+            {'class':'vip','url':'vip','name':'VIP专区'},
+            {'class':'safebz','url':'safebz','name':'安全保障'},
+            {'class':'usr','url':'usr','name':'账户中心'},
+            {'class':'about','url':'about','name':'关于我们'},
+            {'class':'online','url':'online','name':'在线客服'},
+            {'class':'download','url':'download','name':'下载APP'},
+            {'class':'help','url':'help','name':'帮助中心'},
           ],
           newItem:{
             name:'新手标1201测试',

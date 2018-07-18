@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+// import zepto from 'zepto-webpack'
+import '../static/css/common.css'
+import '../static/css/style.css'
+import '../static/css/swiper.css'
+// import '../static/js/zepto.min.js'
+import '../static/js/rem.js'
 // import {Button} from 'element-ui'
 
 // Vue.use(Button)
