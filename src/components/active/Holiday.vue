@@ -3,9 +3,9 @@
 		<div class="gifts_box">
 			<p class="gift_tle">如果活动结束前不再追加认购,以下礼包供您选择</p>
 			<ul class="gifts_lists">
-				<li v-for="(lbData, index) in lbDatas" :class="staFun(lbData.status)[1]">
+				<li ref="giftLi" v-for="(lbData, index) in lbDatas" :class="[staFun(lbData.status)[1],{'did_gift':current==index}]">
 					<p class="lb_num">{{lbData.lbName}}</p>
-					<p class="lb_btn" @click="clickBtn(index)" v-text="staFun(lbData.status)[0]"></p>
+					<p class="lb_btn" @click="flag && clickBtn(index)" v-text="staFun(lbData.status)[0]"></p>
 				</li>
 			</ul>
 		</div>
@@ -35,7 +35,9 @@
 		name:'Holiday',
 		data(){
 			return {
-				current:0,
+				current:null,
+				idx:null,
+				flag:true,
 				lbDatas:[
 					// {'lbName':'礼包1','status':0},//可选择
 					// {'lbName':'礼包2','status':1},//已选择
@@ -84,13 +86,23 @@
 			},
 			getClick:function(){
 				var _that = this;
-				// console.log(132);
+				_that.current = _that.idx;
+				var giftLis = _that.$refs.giftLi;
+				for(var i=0;i<giftLis.length;i++){
+					if(i==_that.current){
+						giftLis[i].classList.add("did_gift");
+						giftLis[i].children[1].innerHTML = '已选择';
+					}else{
+						giftLis[i].classList.add("not_gift");
+						_that.flag = false;
+					}
+				}
 				_that.dialogproVisible=false;
 			},
 			clickBtn:function(index){
 				var _this = this;
+				_this.idx = index;
 				_this.dialogproVisible=true;
-				// console.log(index);
 				if(index == 0){
 					_this.popUpData = _this.popUpData1;
 				}else if(index == 1){
@@ -98,7 +110,7 @@
 				}else if(index == 2){
 					_this.popUpData = _this.popUpData3;
 				}else if(index == 3){
-					_this.popUpData = _this.popUpData4
+					_this.popUpData = _this.popUpData4;
 				}
 
 				// console.log(_this.popUpData);
