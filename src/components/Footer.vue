@@ -20,7 +20,7 @@
 					{'name':'首页','path':'/','class':'index'},
 					{'name':'财行优选','path':'Chyx','class':'chyx'},
 					{'name':'网贷产品','path':'Wdcp','class':'wdcp'},
-					{'name':'账户中心','path':'Own','class':'own'}
+					{'name':'账户中心','path':'Log','class':'own'}
 				]
 			}
 		}

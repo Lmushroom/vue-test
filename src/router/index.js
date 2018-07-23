@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Chyx from '@/components/Chyx'
 import Wdcp from '@/components/Wdcp'
 import Own from '@/components/Own'
+import Log from '@/components/Log'
 import Holiday from '@/components/active/Holiday'
 
 Vue.use(Router)
@@ -40,6 +41,11 @@ export default new Router({
       path: '/active/Holiday',
       name:'holiday',
       component:Holiday
+    },
+    {
+      path: '/log',
+      name:'log',
+      component:Log
     }
   ],
   mode: "history"
