@@ -5,7 +5,7 @@
 			<ul class="gifts_lists">
 				<li ref="giftLi" v-for="(lbData, index) in lbDatas" :class="[staFun(lbData.status)[1],{'did_gift':current==index}]">
 					<p class="lb_num">{{lbData.lbName}}</p>
-					<p class="lb_btn" @click="flag && clickBtn(index)" v-text="staFun(lbData.status)[0]"></p>
+					<p class="lb_btn" @click="flag && clickBtn(index)" v-text="current==index?'已选择':staFun(lbData.status)[0]"></p>
 				</li>
 			</ul>
 		</div>
@@ -38,6 +38,7 @@
 				current:null,
 				idx:null,
 				flag:true,
+				text:0,
 				lbDatas:[
 					// {'lbName':'礼包1','status':0},//可选择
 					// {'lbName':'礼包2','status':1},//已选择
@@ -91,7 +92,6 @@
 				for(var i=0;i<giftLis.length;i++){
 					if(i==_that.current){
 						giftLis[i].classList.add("did_gift");
-						giftLis[i].children[1].innerHTML = '已选择';
 					}else{
 						giftLis[i].classList.add("not_gift");
 						_that.flag = false;
