@@ -104,7 +104,7 @@
 			},
 			loadInitData:function(){
 				var _that = this;
-				this.$ajax.get('/static/json/product.json')
+				this.$ajax.get('/api/product')
 				.then(function(data){
 					_that.allData = data.data;
 				})

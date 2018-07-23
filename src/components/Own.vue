@@ -91,7 +91,7 @@
 		methods:{
 			usrFun:function(){		
 				var _this = this;
-				this.$ajax.get('/static/json/own_money.json')
+				this.$ajax.get('/api/ownmoney')
 				.then(function(res){
 					if(res.data){
 						// console.log(_this.award);
